@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 120" width="1000" height="120" role="img" aria-label="Thanks for stopping by">
+<title>Thanks for stopping by</title>
+<style>
+  .w1 { animation: drift 9s linear infinite; }
+  .w2 { animation: drift 6s linear infinite reverse; }
+  .w3 { animation: drift 12s linear infinite; }
+  @keyframes drift { from { transform: translateX(0); } to { transform: translateX(-500px); } }
+  @media (prefers-reduced-motion: reduce) { .w1, .w2, .w3 { animation: none; } }
+</style>
+<path class="w3" d="M0,120 L0,48 Q125,38 250,48 T500,48 Q625,38 750,48 T1000,48 Q1125,38 1250,48 T1500,48 Q1625,38 1750,48 T2000,48 Q2125,38 2250,48 T2500,48 L2000,120 Z" fill="#0e4429" opacity="0.55"/>
+<path class="w1" d="M0,120 L0,60 Q125,46 250,60 T500,60 Q625,46 750,60 T1000,60 Q1125,46 1250,60 T1500,60 Q1625,46 1750,60 T2000,60 Q2125,46 2250,60 T2500,60 L2000,120 Z" fill="#006d32" opacity="0.75"/>
+<path class="w2" d="M0,120 L0,74 Q62.5,65 125,74 T250,74 Q312.5,65 375,74 T500,74 Q562.5,65 625,74 T750,74 Q812.5,65 875,74 T1000,74 Q1062.5,65 1125,74 T1250,74 Q1312.5,65 1375,74 T1500,74 Q1562.5,65 1625,74 T1750,74 Q1812.5,65 1875,74 T2000,74 Q2062.5,65 2125,74 T2250,74 L2000,120 Z" fill="#26a641"/>
+<text x="500" y="104" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="3" fill="#ffffff">THANKS FOR STOPPING BY</text>
+</svg>

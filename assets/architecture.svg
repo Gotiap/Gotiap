@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 410" width="1000" height="410" role="img" aria-label="How I build: users to Blazor and MVC to ASP.NET Core Web API to an AI layer and LLMs, backed by Redis, background jobs and PostgreSQL">
+<title>How I build: scalable .NET systems with AI in the loop</title>
+<defs>
+  <filter id="pglow" x="-200%" y="-200%" width="500%" height="500%">
+    <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#21262d"/></pattern>
+</defs>
+<style>
+  .flow { animation: flow 1.2s linear infinite; opacity: 0.85; }
+  @keyframes flow { to { stroke-dashoffset: -28; } }
+  .pulse { animation: pulse 2.4s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 0.08; } 50% { opacity: 0.7; } }
+  .rep1 { animation: rep 6s ease-in-out infinite; }
+  .rep2 { animation: rep 6s ease-in-out 0.5s infinite; }
+  .replabel { animation: rep 6s ease-in-out infinite; }
+  @keyframes rep { 0%, 15%, 85%, 100% { opacity: 0; } 35%, 65% { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { .flow, .pulse, .rep1, .rep2, .replabel { animation: none; } }
+</style>
+<rect x="1" y="1" width="998" height="408" rx="17" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+<rect x="1" y="1" width="998" height="408" rx="17" fill="url(#dots)"/>
+<text x="32" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="3" fill="#39d353">HOW I BUILD</text>
+<text x="32" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#e6edf3">Scalable .NET systems with AI in the loop</text>
+
+<rect class="rep2" x="416" y="114" width="180" height="70" rx="12" fill="#0d1117" stroke="#26a641" stroke-dasharray="4 4"/>
+<rect class="rep1" x="408" y="122" width="180" height="70" rx="12" fill="#0d1117" stroke="#26a641" stroke-dasharray="4 4"/>
+<text class="replabel" x="600" y="110" font-family="ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace" font-size="11" fill="#39d353">scales out</text>
+
+  <path id="e1" d="M152,165 H200" fill="none" stroke="#30363d" stroke-width="2"/><path class="flow" d="M152,165 H200" fill="none" stroke="#26a641" stroke-width="2" stroke-dasharray="5 9"/>
+  <path id="e2" d="M350,165 H400" fill="none" stroke="#30363d" stroke-width="2"/><path class="flow" d="M350,165 H400" fill="none" stroke="#26a641" stroke-width="2" stroke-dasharray="5 9"/>
+  <path id="e3" d="M580,165 H630" fill="none" stroke="#30363d" stroke-width="2"/><path class="flow" d="M580,165 H630" fill="none" stroke="#26a641" stroke-width="2" stroke-dasharray="5 9"/>
+  <path id="e4" d="M790,165 H840" fill="none" stroke="#30363d" stroke-width="2"/><path class="flow" d="M790,165 H840" fill="none" stroke="#26a641" stroke-width="2" stroke-dasharray="5 9"/>
+  <path id="e5" d="M440,200 V240 H400 V280" fill="none" stroke="#30363d" stroke-width="2"/><path class="flow" d="M440,200 V240 H400 V280" fill="none" stroke="#26a641" stroke-width="2" stroke-dasharray="5 9"/>
+  <path id="e6" d="M540,200 V240 H555 V280" fill="none" stroke="#30363d" stroke-width="2"/><path class="flow" d="M540,200 V240 H555 V280" fill="none" stroke="#26a641" stroke-width="2" stroke-dasharray="5 9"/>
+  <path id="e7" d="M710,200 V280" fill="none" stroke="#30363d" stroke-width="2"/><path class="flow" d="M710,200 V280" fill="none" stroke="#26a641" stroke-width="2" stroke-dasharray="5 9"/>
+  <path id="e8" d="M630,312 H680" fill="none" stroke="#30363d" stroke-width="2"/><path class="flow" d="M630,312 H680" fill="none" stroke="#26a641" stroke-width="2" stroke-dasharray="5 9"/>
+  
+  <g>
+    
+    <rect x="32" y="130" width="120" height="70" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+    <text x="92" y="161" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#e6edf3">Users</text>
+    <text x="92" y="181" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">web · mobile · B2B</text>
+  </g>
+  
+  <g>
+    
+    <rect x="200" y="130" width="150" height="70" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+    <text x="275" y="161" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#e6edf3">Blazor · MVC</text>
+    <text x="275" y="181" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">server-rendered UI</text>
+  </g>
+  
+  <g>
+    <rect class="pulse" x="396" y="126" width="188" height="78" rx="16" fill="none" stroke="#39d353" stroke-width="2"/>
+    <rect x="400" y="130" width="180" height="70" rx="12" fill="#161b22" stroke="#26a641" stroke-width="1.5"/>
+    <text x="490" y="161" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#e6edf3">ASP.NET Core</text>
+    <text x="490" y="181" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">Web API</text>
+  </g>
+  
+  <g>
+    <rect class="pulse" x="626" y="126" width="168" height="78" rx="16" fill="none" stroke="#39d353" stroke-width="2"/>
+    <rect x="630" y="130" width="160" height="70" rx="12" fill="#161b22" stroke="#26a641" stroke-width="1.5"/>
+    <text x="710" y="161" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#e6edf3">AI layer</text>
+    <text x="710" y="181" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">agents · RAG · tools</text>
+  </g>
+  
+  <g>
+    
+    <rect x="840" y="130" width="128" height="70" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+    <text x="904" y="161" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#e6edf3">LLMs</text>
+    <text x="904" y="181" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">model APIs</text>
+  </g>
+  
+  <g>
+    
+    <rect x="340" y="280" width="120" height="64" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+    <text x="400" y="308" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#e6edf3">Redis</text>
+    <text x="400" y="328" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">cache · locks</text>
+  </g>
+  
+  <g>
+    
+    <rect x="480" y="280" width="150" height="64" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+    <text x="555" y="308" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#e6edf3">Background jobs</text>
+    <text x="555" y="328" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">queues · retries</text>
+  </g>
+  
+  <g>
+    
+    <rect x="680" y="280" width="170" height="64" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+    <text x="765" y="308" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#e6edf3">PostgreSQL</text>
+    <text x="765" y="328" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">data + vectors</text>
+  </g>
+  <circle r="4.5" fill="#39d353" filter="url(#pglow)" opacity="0"><set attributeName="opacity" to="1" begin="0s"/><animateMotion dur="1.4s" begin="0s" repeatCount="indefinite"><mpath xlink:href="#e1"/></animateMotion></circle>
+  <circle r="4.5" fill="#39d353" filter="url(#pglow)" opacity="0"><set attributeName="opacity" to="1" begin="0.7s"/><animateMotion dur="1.4s" begin="0.7s" repeatCount="indefinite"><mpath xlink:href="#e2"/></animateMotion></circle>
+  <circle r="4.5" fill="#39d353" filter="url(#pglow)" opacity="0"><set attributeName="opacity" to="1" begin="1.4s"/><animateMotion dur="1.4s" begin="1.4s" repeatCount="indefinite"><mpath xlink:href="#e3"/></animateMotion></circle>
+  <circle r="4.5" fill="#39d353" filter="url(#pglow)" opacity="0"><set attributeName="opacity" to="1" begin="2.1s"/><animateMotion dur="1.4s" begin="2.1s" repeatCount="indefinite"><mpath xlink:href="#e4"/></animateMotion></circle>
+  <circle r="4.5" fill="#58a6ff" filter="url(#pglow)" opacity="0"><set attributeName="opacity" to="1" begin="2.8s"/><animateMotion dur="1.4s" begin="2.8s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath xlink:href="#e4"/></animateMotion></circle>
+  <circle r="4.5" fill="#58a6ff" filter="url(#pglow)" opacity="0"><set attributeName="opacity" to="1" begin="3.5s"/><animateMotion dur="1.4s" begin="3.5s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath xlink:href="#e3"/></animateMotion></circle>
+  <circle r="4.5" fill="#58a6ff" filter="url(#pglow)" opacity="0"><set attributeName="opacity" to="1" begin="4.2s"/><animateMotion dur="1.4s" begin="4.2s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath xlink:href="#e2"/></animateMotion></circle>
+  <circle r="4.5" fill="#58a6ff" filter="url(#pglow)" opacity="0"><set attributeName="opacity" to="1" begin="4.9s"/><animateMotion dur="1.4s" begin="4.9s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath xlink:href="#e1"/></animateMotion></circle>
+  <circle r="4.5" fill="#58a6ff" filter="url(#pglow)" opacity="0"><set attributeName="opacity" to="1" begin="0.4s"/><animateMotion dur="1.6s" begin="0.4s" repeatCount="indefinite"><mpath xlink:href="#e5"/></animateMotion></circle>
+  <circle r="4.5" fill="#d2a8ff" filter="url(#pglow)" opacity="0"><set attributeName="opacity" to="1" begin="1s"/><animateMotion dur="1.8s" begin="1s" repeatCount="indefinite"><mpath xlink:href="#e6"/></animateMotion></circle>
+  <circle r="4.5" fill="#d2a8ff" filter="url(#pglow)" opacity="0"><set attributeName="opacity" to="1" begin="2.2s"/><animateMotion dur="1.2s" begin="2.2s" repeatCount="indefinite"><mpath xlink:href="#e8"/></animateMotion></circle>
+  <circle r="4.5" fill="#39d353" filter="url(#pglow)" opacity="0"><set attributeName="opacity" to="1" begin="1.8s"/><animateMotion dur="1.6s" begin="1.8s" repeatCount="indefinite"><mpath xlink:href="#e7"/></animateMotion></circle>
+  <circle r="4.5" fill="#58a6ff" filter="url(#pglow)" opacity="0"><set attributeName="opacity" to="1" begin="3.4s"/><animateMotion dur="1.6s" begin="3.4s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath xlink:href="#e7"/></animateMotion></circle>
+  <circle r="4.5" fill="#39d353" filter="url(#pglow)" opacity="0"><set attributeName="opacity" to="1" begin="3s"/><animateMotion dur="1.4s" begin="3s" repeatCount="indefinite"><mpath xlink:href="#e1"/></animateMotion></circle>
+  <circle r="4.5" fill="#39d353" filter="url(#pglow)" opacity="0"><set attributeName="opacity" to="1" begin="3.7s"/><animateMotion dur="1.4s" begin="3.7s" repeatCount="indefinite"><mpath xlink:href="#e2"/></animateMotion></circle>
+
+<g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">
+  <circle cx="38" cy="381" r="4.5" fill="#39d353"/><text x="50" y="385">request</text>
+  <circle cx="122" cy="381" r="4.5" fill="#58a6ff"/><text x="134" y="385">response / cache</text>
+  <circle cx="258" cy="381" r="4.5" fill="#d2a8ff"/><text x="270" y="385">async job</text>
+</g>
+</svg>
